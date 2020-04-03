@@ -47,7 +47,7 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship'
 
 # model
 print('==> Building model..')
-net = ResNet18()
+net = ResNet152()
 net = net.to(device)
 if device == 'cuda':
     net = torch.nn.DataParallel(net)
